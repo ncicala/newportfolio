@@ -1,0 +1,104 @@
+/*CSS reset- owerwrite the default setings, so boxes stay inside
+             parent*/
+html{
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after{
+    box-sizing: inherit;
+  }
+/*End reset*/
+
+body{
+    background-color: black;
+    background-image: url('../images/galaxy.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.card{
+    width:650px;
+    height:auto; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    box-shadow: 0px 0px 10px rgb(105, 12, 226);
+}
+.box{
+    border: 2px solid rgb(105, 12, 226);
+    background-color: rgb(221, 161, 223);
+    
+    width:100%;
+    height:auto;
+}
+.title{
+    transform: skew(50,50);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+.header{
+    color: rgb(30, 0, 255);
+    font-size: 50px;
+}
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+/* button properties */
+button{
+    color: white;
+    border: 1px solid;
+    height: 100px;
+    width: 100%;
+    font-size: 25px;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.currentbutton{ 
+    background-color: rgb(2, 145, 254);
+}
+.otherbutton{ 
+    background-color: rgb(105, 12, 226);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+img
+{
+    width: 200px;
+}
+
+@media (max-width:650px){
+    .card{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    } 
+    button{
+        height: 150px;
+        width: auto;
+    }
+    .navbar, .content{
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+}
