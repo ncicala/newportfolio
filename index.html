@@ -11,32 +11,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <audio id="myAudio" src="sounds/bleep.wav" preload="auto"></audio>
+    <audio id="beep" src="audioBeep" controls></audio>
 </head>
 
 <body>
     <div class="card">
         <div class="title box">
-            <h class="header">About Me</h>
+            <h class="header" id="header">About Me</h>
         </div>
         <div class="bottom box">
             <div class="navbar box">
                 <div class="navlink box">               
-                    <a href="index.html" class="current">About Me!</a>
+                    <a href="index.html" class="current" onclick="playBeep()">About Me!</a>
                 </div>
                 <div class="navlink box">               
-                    <a href="projects.html" class="other">Projects</a>
+                    <a href="projects.html" class="other" onclick="playBeep()">Projects</a>
                 </div>
                 <div class="navlink box">               
-                    <a href="contacts.html" class="other">Contacts</a>
+                    <a href="contacts.html" class="other" onclick="playBeep()">Contacts</a>
                 </div>
             </div>
             <div class="content box">
                 <img src="images/ncicala.jpg" alt="website creator" class="nick">
                 <h class="text">Hi! My name is Nicholas Cicala, and I'm a current NIC student aiming for a computer science degree major!
-                    <br><br>I always liked sci-fi asthetics, so I incorporated some of them into this Portfolio website, which features three of my projects as well as ways to contact me!
+                    <br><br>I always liked sci-fi asthetics, so I incorporated some into this Portfolio website, which features three of my projects as well as ways to contact me!
                 </h>
             </div>
         </div>
     </div>
+    <script src="js/portfolio.js"></script>
 </body>

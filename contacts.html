@@ -11,24 +11,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <audio id="myAudio" src="sounds/bleep.wav" preload="auto"></audio>
+    <audio id="beep" src="audioBeep" controls></audio>
 </head>
 
 <body>
     <div class="card">
         <div class="title box">
-            <h class="header">Contacts</h>
+            <h class="header" id="header">Contacts</h>
         </div>
         <div class="bottom box">
             <div class="navbar box">
                 <div class="navlink box">               
-                    <a href="index.html" class="other">About Me!</a>
+                    <a href="index.html" class="other" onclick="playBeep()">About Me!</a>
                 </div>
                 <div class="navlink box">               
-                    <a href="projects.html" class="other">Projects</a>
+                    <a href="projects.html" class="other" onclick="playBeep()">Projects</a>
                 </div>
                 <div class="navlink box">               
-                    <a href="contacts.html" class="computer">Contacts</a>
+                    <a href="contacts.html" class="computer" onclick="playBeep()">Contacts</a>
                 </div>
             </div>
             <div class="content box">
@@ -38,4 +38,5 @@
             </div>
         </div>
     </div>
+    <script src="js/portfolio.js"></script>
 </body>
