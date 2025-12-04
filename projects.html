@@ -1,11 +1,11 @@
-<!--index.html-->
+<!--projects.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
   <!-- displays site properly based on user's device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Nicholas' Portfolio</title>
+    <title>Nicholas' Portfolio - Projects</title>
     <link rel="stylesheet" href="CSS/style.css">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,19 +17,38 @@
 <body>
     <div class="card">
         <div class="title box">
-            <h class="header">About Me</h>
+            <h class="header">Projects</h>
         </div>
         <div class="bottom box">
             <div class="navbar box">
-                <button type="button"   class= "currentbutton"  id="about"   >About Me</button>
-                <button type="button"   class= "otherbutton"    id="projects">Projects</button>
-                <button type="button"   class= "otherbutton"    id="contacts">Contacts</button>
+                <div class="navlink box">               
+                    <a href="index.html" class="other">About Me!</a>
+                </div>
+                <div class="navlink box">               
+                    <a href="projects.html" class="current">Projects</a>
+                </div>
+                <div class="navlink box">               
+                    <a href="contacts.html" class="other">Contacts</a>
+                </div>
             </div>
-            <div class="content box">
-                <img src="images/ncicala.jpg" 
-                     alt="developer">
-                <h class="text">Hi! My name is Nicholas Cicala, and I'm a current NIC student aiming for a computer science degree major!
-                    <br><br>I always liked sci-fi asthetics, so I incorporated some of them into this Portfolio website, which features three of my projects as well as ways to contact me!
+            <div class="projects box">
+                <h class="text">These are a selection of projects that I've worked on over the past few years.
+                    <br><br>
+                </h>
+                <img src="images/ncicala_portfolio_1.PNG" alt="Scratch Binary Search" class="scratch">
+                <br>
+                <a href="https://github.com/ncicala/scratchBinarySearch" class="current">Scratch Binary Search</a>
+                <h class="text"> - Early, Simple Binary search made in scratch.
+                <br>
+                <img src="images/ncicala_portfolio_2.PNG" alt="Battleship" class="battleship">
+                <br>
+                <a href="https://github.com/ncicala/Battleship" class="current">Battleship</a>
+                <h class="text"> - Simple Battleship game made in C++.
+                <br>
+                <img src="images/ncicala_portfolio_3.PNG" alt="Float-point" class="floatie">
+                <br>
+                <a href="https://github.com/ncicala/floating_point_converter" class="current">Assembly Floating Point Converter</a>
+                <h class="text"> - Simple, scuffed floating point calculator.
                 </h>
             </div>
         </div>

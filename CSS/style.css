@@ -17,7 +17,9 @@ body{
     font-family: "Quantico", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 }
+/* Card + Box properties */
 .card{
     width:650px;
     height:auto; 
@@ -36,7 +38,6 @@ body{
     height:auto;
 }
 .title{
-    transform: skew(50,50);
     height: 100px;
     width: 100%;
     text-align: center;
@@ -45,58 +46,74 @@ body{
     display: flex;
     flex-direction: row;
 }
+.content, .projects{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 175%;
+}
+.projects{
+    height: 600px;
+    overflow-y: scroll;
+}
+/* Font size properties */
 .header{
     color: rgb(30, 0, 255);
     font-size: 50px;
 }
 .text{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 18px;
 }
 
-/* button properties */
-button{
-    color: white;
-    border: 1px solid;
-    height: 100px;
-    width: 100%;
-    font-size: 25px;
+/* navlink properties */
+.navlink{
+    background-color: rgb(105, 12, 226);
+    padding: 15px 25px;
 }
-button:hover{
-    cursor: pointer;
+.other{
+    color: aqua;
+}
+.current{
+    color: darkblue;
+}
+a{
+    font-size: 22px;
+}
+a:hover{
     opacity: 0.8;
 }
-.currentbutton{ 
-    background-color: rgb(2, 145, 254);
-}
-.otherbutton{ 
-    background-color: rgb(105, 12, 226);
-}
 
-.content{
-    display: flex;
-    flex-direction: column;
-}
-
-img
+/* Image properties */
+.nick
 {
     width: 200px;
 }
+.scratch
+{
+    width: 75%;
+    height: 50%;
+}
+.battleship
+{
+    width: 75%;
+    height: 40%;
+}
+.floatie
+{
+    width: 80%;
+    height: 25%;
+}
 
+/*Mobile view mode*/
 @media (max-width:650px){
     .card{
         width: 90%;
         display: flex;
         flex-direction: column;
     } 
-    button{
-        height: 150px;
-        width: auto;
-    }
     .navbar, .content{
         width: 100%;
-        height: 100%;
-        flex-direction: row;
+        flex-direction: column;
     }
     .bottom{
         flex-direction: column;
