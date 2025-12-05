@@ -76,6 +76,9 @@ body{
 .current{
     color: darkblue;
 }
+.profile{
+    font-size: 18px;
+}
 a{
     font-size: 22px;
 }
@@ -118,4 +121,6 @@ a:hover{
     .bottom{
         flex-direction: column;
     }
+}
+@media (mmin-width:650px){
 }
